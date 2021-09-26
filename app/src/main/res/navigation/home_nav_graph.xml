@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.HomeFragment"
+        android:label="fragment_home_posts"
+        tools:layout="@layout/fragment_home_posts" >
+        <action
+            android:id="@+id/action_fragment_home_to_searchUsersFragment"
+            app:destination="@id/searchUsersFragment" />
+        <action
+            android:id="@+id/action_fragment_home_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_fragment_home_to_accountProfileFragment"
+            app:destination="@id/accountProfileFragment" />
+        <action
+            android:id="@+id/action_fragment_home_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_fragment_search_to_searchUsersFragment"
+            app:destination="@id/searchUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_posts"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" />
+    <fragment
+        android:id="@+id/fragment_groups"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragment_profile_to_walletFragment"
+            app:destination="@id/walletFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_rewardsFragment"
+            app:destination="@id/rewardsFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_accountInformationFragment"
+            app:destination="@id/accountInformationFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_followersFragment"
+            app:destination="@id/followersFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_followingFragment"
+            app:destination="@id/followingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.crageeApp.appbesocial.Notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/searchUsersFragment"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.SearchUsersFragment"
+        android:label="fragment_search_users"
+        tools:layout="@layout/fragment_search_users" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.crageeApp.appbesocial.Rewards.rewardsFragment"
+        android:label="fragment_rewards"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.crageeApp.appbesocial.Settings.settingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_inviteFriendsFragment"
+            app:destination="@id/inviteFriendsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_termsOfServiceFragment"
+            app:destination="@id/termsOfServiceFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_writeToUsFragment"
+            app:destination="@id/writeToUsFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.crageeApp.appbesocial.Settings.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.crageeApp.appbesocial.Settings.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" />
+    <fragment
+        android:id="@+id/inviteFriendsFragment"
+        android:name="com.crageeApp.appbesocial.Settings.InviteFriendsFragment"
+        android:label="fragment_invite_friends"
+        tools:layout="@layout/fragment_invite_friends" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.crageeApp.appbesocial.Settings.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="com.crageeApp.appbesocial.Settings.RateFragment"
+        android:label="fragment_rate"
+        tools:layout="@layout/fragment_rate" />
+    <fragment
+        android:id="@+id/termsOfServiceFragment"
+        android:name="com.crageeApp.appbesocial.Settings.TermsOfServiceFragment"
+        android:label="fragment_terms_of_service"
+        tools:layout="@layout/fragment_terms_of_service" />
+    <fragment
+        android:id="@+id/writeToUsFragment"
+        android:name="com.crageeApp.appbesocial.Settings.WriteToUsFragment"
+        android:label="fragment_write_to_us"
+        tools:layout="@layout/fragment_write_to_us" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.crageeApp.appbesocial.Settings.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/accountInformationFragment"
+        android:name="com.crageeApp.appbesocial.AccountInformation.accountInformationFragment"
+        android:label="fragment_account_information"
+        tools:layout="@layout/fragment_account_information" />
+    <fragment
+        android:id="@+id/accountProfileFragment"
+        android:name="com.crageeApp.appbesocial.AccountProfile.AccountProfileFragment"
+        android:label="fragment_account_profile"
+        tools:layout="@layout/fragment_account_profile" >
+        <argument
+            android:name="visit_user_id"
+            app:argType="string" />
+    </fragment><action android:id="@+id/action_global_accountProfileFragment" app:destination="@id/accountProfileFragment"/>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.crageeApp.appbesocial.Verification.verificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="com.crageeApp.appbesocial.Notifications.LikesFragment"
+        android:label="fragment_likes"
+        tools:layout="@layout/fragment_likes" >
+        <action
+            android:id="@+id/action_likesFragment_to_accountProfileFragment"
+            app:destination="@id/accountProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.crageeApp.appbesocial.Home.Fragments.welcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/followersFragment"
+        android:name="com.crageeApp.appbesocial.Followers.followersFragment"
+        android:label="fragment_followers"
+        tools:layout="@layout/fragment_followers" />
+    <fragment
+        android:id="@+id/followingFragment"
+        android:name="com.crageeApp.appbesocial.Following.followingFragment"
+        android:label="fragment_following"
+        tools:layout="@layout/fragment_following" />
+</navigation>

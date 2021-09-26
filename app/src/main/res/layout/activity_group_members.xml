@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Groups.GroupMembersActivity">
+    <TextView
+        android:id="@+id/groupMembersTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Members"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/groupMembersText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All members of this group will be shown here"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/groupMembersTv"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rVGroupMembersList"
+        android:layout_below="@+id/groupMembersText"
+        android:layout_margin="5dp"
+        android:padding="5dp"/>
+</RelativeLayout>

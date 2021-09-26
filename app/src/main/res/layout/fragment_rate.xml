@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Settings.RateFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_app"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_app_text"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/about_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_rate_app"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textColor="@color/red"/>
+    <RatingBar
+        android:id="@+id/rating_bar_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:numStars="5"
+        android:max="5"
+        android:stepSize="1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/rating_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_rate_thanks"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

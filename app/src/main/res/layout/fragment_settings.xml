@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings.settingsFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar_settings"
+            android:background="@color/red"
+            app:title="Settings"
+            app:titleTextColor="@color/white"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentContainerSettings"
+            android:layout_below="@+id/tool_bar_settings" />
+        <LinearLayout
+            android:id="@+id/layout_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/tool_bar_settings">
+            <!-- blue tick layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/blueTickLayout"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_blue_tick"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blueTick"
+                    android:text="@string/user_blue_tick"
+                    android:textSize="28sp"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cVGeneralSettings"
+                android:elevation="2dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                tools:targetApi="lollipop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_basic_settings"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="General"
+                            android:textSize="20sp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_mobile_no"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:layout_marginStart="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_email"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Email"
+                            android:layout_marginStart="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/account_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Email"
+                            android:textSize="15sp"
+                            android:textAlignment="viewEnd"
+                            android:paddingEnd="10dp"
+                            android:gravity="end"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_password"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Password"
+                            android:layout_marginStart="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_account_type"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Type"
+                            android:layout_marginStart="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView
+                            android:id="@+id/account_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Public"
+                            android:textSize="15sp"
+                            android:textAlignment="viewEnd"
+                            android:paddingEnd="10dp"
+                            android:gravity="end"
+                            android:paddingRight="10dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_privacy"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Privacy"
+                            android:layout_marginStart="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView
+                            android:id="@+id/account_privacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Public"
+                            android:textSize="15sp"
+                            android:textAlignment="viewEnd"
+                            android:paddingEnd="10dp"
+                            android:textStyle="bold"
+                            android:gravity="end"
+                            android:paddingRight="10dp"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cVTermsAndPolicies"
+                android:elevation="2dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/terms"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Terms and Policies"
+                            android:textSize="20sp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_terms"/>
+                        <TextView
+                            android:id="@+id/tVTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terms of Service"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_data"/>
+                        <TextView
+                            android:id="@+id/tVDataPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data Policy"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_community"/>
+                        <TextView
+                            android:id="@+id/tVCommunityStd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Community Standards"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cVOthers"
+                android:elevation="2dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_others"
+                            android:layout_gravity="center_vertical"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Others"
+                            android:id="@+id/tvOthers"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_about"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:id="@+id/tVAboutApp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About"
+                                android:textSize="15sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_rate"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:id="@+id/tVRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rate"
+                                android:layout_marginStart="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_invite"/>
+                            <TextView
+                                android:id="@+id/tVInvite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Invite friends"
+                                android:layout_marginStart="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_write"/>
+                            <TextView
+                                android:id="@+id/tVWrite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Write to us"
+                                android:layout_marginStart="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cVLogout"
+                android:elevation="2dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                tools:targetApi="lollipop"
+                android:padding="25dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_logout"
+                        android:layout_gravity="center_vertical"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/logoutUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Log out"
+                        android:textSize="25sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

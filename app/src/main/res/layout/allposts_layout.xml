@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/postLayout"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/wholePostLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/postProfileImageValue"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/profile_image"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/postProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:minLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp" />
+                    <ImageView
+                        android:id="@+id/userBlueTick"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@color/white"
+                        android:src="@drawable/icon_blue_tick"
+                        android:layout_toEndOf="@+id/postProfileName"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/postProfileName"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription" />
+                    <ImageButton
+                        android:id="@+id/postOptions"
+                        android:layout_width="50dp"
+                        android:layout_height="10dp"
+                        android:background="@color/white"
+                        android:src="@drawable/icon_post_options"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:id="@+id/currentPostTime"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:autoLink="all"
+                        android:clickable="false"
+                        android:id="@+id/postDescription"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:visibility="gone"
+                        android:focusable="false" />
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:maxHeight="400dp"
+                        android:minHeight="400dp"
+                        android:src="@drawable/post_image"
+                        android:adjustViewBounds="true"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10 Likes"
+                        android:id="@+id/totalPostLikes"
+                        android:textSize="18sp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:visibility="visible"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+            <ImageButton
+                android:id="@+id/like_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_like_button"
+                android:drawablePadding="5dp"
+                style="?android:attr/borderlessButtonStyle"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/comment_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_comment"
+                  style="?android:attr/borderlessButtonStyle"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/share_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_share"
+                style="?android:attr/borderlessButtonStyle"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

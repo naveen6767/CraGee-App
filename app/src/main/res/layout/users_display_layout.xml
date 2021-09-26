@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/profile_image"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                tools:ignore="UseCompoundDrawables">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/user_name"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_profile_name"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp" />
+                <ImageView
+                    android:id="@+id/user_online_status"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/online_icon"
+                    android:visibility="invisible"
+                    android:contentDescription="User online status"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Follow"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/followButton"
+                    style="?android:button"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="20dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Accept"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/requestAcceptButton"
+                    style="?android:button"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="20dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cancel"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/cancelButton"
+                    style="?android:button"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    android:padding="2dp"
+                    android:layout_toEndOf="@+id/requestAcceptButton"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/requestAcceptButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Direct Message"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/directMessage_button"
+                    style="?android:button"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    android:padding="5dp"
+                    android:layout_toEndOf="@+id/requestAcceptButton"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/requestAcceptButton" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

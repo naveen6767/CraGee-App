@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="9"
+    android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/group_cover_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile_image"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                card_view:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/group_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp" />
+                    <ImageView
+                        android:id="@+id/groupBlueTick"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/white"
+                        android:src="@drawable/icon_blue_tick"
+                        android:layout_toEndOf="@+id/group_name"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/group_name"
+                        android:visibility="gone"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        card_view:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/group_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_privacy_adapter"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+</LinearLayout>

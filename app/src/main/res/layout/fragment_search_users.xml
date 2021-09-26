@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Fragments.SearchUsersFragment">
+
+    <EditText
+        android:id="@+id/search_new_users"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/Search"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/white_border_rectangular"
+        android:drawableStart="@drawable/ic_search"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:layout_margin="@dimen/margin_5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_below="@+id/search_new_users"
+        android:id="@+id/viewBelowSearchBar"
+        android:background="@color/grey"/>
+    <RelativeLayout
+        android:id="@+id/onlineUsersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewBelowSearchBar">
+        <TextView
+            android:id="@+id/onlineUsersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_users"
+            android:textSize="28sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/users_recycler_view"
+            android:layout_below="@+id/onlineUsersText"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_users_rv"
+        android:layout_below="@+id/viewBelowSearchBar"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/profile_image"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_profile_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp" />
+                <ImageView
+                    android:id="@+id/onlineUserBlueTick"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/icon_blue_tick"
+                    android:layout_toEndOf="@+id/user_profile_name"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/user_profile_name"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp" />
+                <ImageView
+                    android:id="@+id/user_online_status"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/online_icon"
+                    android:visibility="visible"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/crageeApp/appbesocial/Adapters/AdapterPostsAllPosts.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/crageeApp/appbesocial/Adapters/AdapterPostsAllPosts.java	(date 1606622375639)
++++ app/src/main/java/com/crageeApp/appbesocial/Adapters/AdapterPostsAllPosts.java	(date 1606622375639)
+@@ -58,7 +58,7 @@
+ public class AdapterPostsAllPosts extends RecyclerView.Adapter<AdapterPostsAllPosts.MyHolder> {
+ 
+     private final Context context;
+-    private   List<ModelPosts> postsList=new ArrayList<>();
++    private   List<ModelPosts> postsList;
+     private final String myUid;
+     private String publisherId;
+     private final DatabaseReference mRootRef;  //for posts database node

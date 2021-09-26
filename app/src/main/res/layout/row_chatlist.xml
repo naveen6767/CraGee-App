@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+    <!--ImageView: user Profile image-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profileIv"
+        android:src="@drawable/profile_image"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+    <!--ImageView: Online/Offline  Status-->
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/onlineStatusIv"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/profileIv"
+        android:layout_toRightOf="@+id/profileIv"
+        android:layout_centerVertical="true"
+        tools:ignore="RtlHardcoded"
+        android:id="@+id/msgLayout">
+        <!--TextView: User name-->
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:layout_marginLeft="4dp"
+            android:paddingLeft="10dp" />
+        <!--TextView: Last message(by sender/receiver)-->
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/messages"
+            android:maxLines="1"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:layout_marginLeft="4dp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/user_online_state"
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:src="@drawable/circle_online"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/profileIv"
+        android:layout_toRightOf="@+id/profileIv" />
+
+</RelativeLayout>

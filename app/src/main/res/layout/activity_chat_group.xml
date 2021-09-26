@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Groups.chatGroupActivity"
+    android:background="#F1EDED"
+    android:id="@+id/group_chat_layout">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/toolBarGroupChat"
+        android:background="@color/darkGreen"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--receiver profile picture-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/groupProfileIv"
+                android:src="@drawable/ic_default_face"
+                android:background="@color/darkGreen"
+                android:layout_centerVertical="true"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/groupProfileIv"
+                android:layout_toEndOf="@+id/groupProfileIv">
+                <!--receiver name-->
+                <TextView
+                    android:id="@+id/groupNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="His Name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--receiver status online or offline-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/GroupUsersStatusTv"
+                    android:text="Online"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Night Mode-->
+            <!--group chat options-->
+            <ImageButton
+                android:id="@+id/night_mode_button_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGreen"
+                android:src="@drawable/icon_light_bulb_on"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/groupChatOptions"
+                android:layout_toLeftOf="@+id/groupChatOptions"
+                android:layout_centerVertical="true"/>
+            <ImageButton
+                android:id="@+id/night_mode_button_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGreen"
+                android:src="@drawable/icon_light_bulb_off"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription"
+                android:visibility="gone"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/groupChatOptions"
+                android:layout_toLeftOf="@+id/groupChatOptions"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/groupChatOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:background="@color/darkGreen"
+                android:src="@drawable/ic_post_options"
+                android:tint="@color/white"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/groupChatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolBarGroupChat"
+            android:layout_above="@+id/senderLayout">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/groupSwipeRefresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--recycler view-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/group_chat_recyclerView"
+                    android:scrollbars="vertical">
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </RelativeLayout>
+
+    <!-- user messages edit text and send button layout-->
+    <LinearLayout
+        android:id="@+id/senderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+        <!--edit text input message-->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupMessageEt"
+            android:background="@drawable/white_grey_border_small"
+            android:hint="Start typing"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <!--send message button-->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/send_icon"
+            android:id="@+id/groupSMSSendBtn"
+            android:background="@null"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+</RelativeLayout>

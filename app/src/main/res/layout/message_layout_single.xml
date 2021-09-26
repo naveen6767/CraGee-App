@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="15dp"
+    android:layout_height="75dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="UselessParent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/singlemessageprofile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profile_image"/>
+
+       <TextView
+           android:id="@+id/singlemessagedisplayname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/singlemessageprofile_image"
+           android:layout_marginStart="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_toEndOf="@+id/singlemessageprofile_image"
+           android:layout_toRightOf="@+id/singlemessageprofile_image"
+           android:text=""
+           android:textColor="@android:color/black"
+           android:textSize="16sp"
+           tools:ignore="RelativeOverlap"
+           tools:text="@string/user_name" />
+    <TextView
+        android:id="@+id/singlemessageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/singlemessagedisplayname"
+        android:layout_below="@+id/singlemessagedisplayname"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:layout_alignLeft="@+id/singlemessagedisplayname"
+        android:layout_marginRight="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="RelativeOverlap"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/online_messageicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/online"
+        android:visibility="invisible"
+        android:text="@string/online1"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="78dp" />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/light_grey"
+           android:layout_alignParentBottom="true"
+           android:layout_toEndOf="@+id/singlemessageprofile_image"
+           android:layout_toRightOf="@+id/singlemessageprofile_image" />
+       <ImageButton
+           android:id="@+id/new_message_icon"
+           android:layout_width="18sp"
+           android:layout_height="18sp"
+           android:src="@drawable/new_message_icon"
+           android:visibility="gone"
+           tools:ignore="ContentDescription"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="10dp"
+           android:layout_marginRight="10dp" />
+   </RelativeLayout>
+
+</RelativeLayout>

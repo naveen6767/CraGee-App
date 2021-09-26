@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:gravity="start">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_receiver">
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:text="His message"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:maxWidth="300dp"
+            app:layout_goneMarginStart="3dp"
+            app:layout_goneMarginEnd="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/messageIv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="1dp"
+            android:adjustViewBounds="true"
+
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_image_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageTv"
+            tools:ignore="ContentDescription"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="65dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"
+                android:text="05:59PM"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sendReceiptButton"
+                app:layout_constraintStart_toEndOf="@+id/messageTv" />
+
+            <ImageButton
+                android:id="@+id/sendReceiptButton"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/Outgoing_Chat_Bubble"
+                android:src="@drawable/icon_send_message"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/timeTv"
+                app:layout_constraintTop_toTopOf="@+id/timeTv"
+                tools:ignore="ContentDescription"
+                android:layout_marginRight="24dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

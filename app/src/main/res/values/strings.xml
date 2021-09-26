@@ -1,0 +1,891 @@
+<resources>
+    <string name="app_name">CraGee App</string>
+
+    <!--    Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Remove or change this placeholder text -->
+    <string-array name="list_items">
+        <item>Friends</item>
+        <item>Groups</item>
+        <item>Pages</item>
+        <item>Events</item>
+        <item>Help and Support</item>
+        <item>Settings and Privacy</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="Relationship_status">
+
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Engaged</item>
+        <item>Married</item>
+        <item>In a civil union</item>
+        <item>In a domestic partnership</item>
+        <item>In an open relationship</item>
+        <item>Its complicated</item>
+        <item>Single</item>
+        <item>Widowed</item>
+
+    </string-array>
+
+    <!--    Remove or change this placeholder text -->
+
+    <string name="still_working"> Updated soon </string>
+    <string name="Members">Members</string>
+    <string name="Share_something_here_useful_for_this_group">Share something here useful for this group</string>
+    <string name="Post">Post</string>
+
+    <string name="Anyone_can_find_the_group_and_see_who_is_in_it_and_what_they_post">Anyone can find rhe group and see who is in it and what they post</string>
+    <string name="text_for_post">Write something here....</string>
+    <string name="post_options_photo">Photo</string>
+    <string name="post_options_tag">Tag People</string>
+    <string name="post_options_Feeling">Feeling</string>
+
+    <string name="Current_user_name">Post</string>
+    <string name="button_post">Post</string>
+
+    <string-array name="Privacy_field">
+
+        <item>Public</item>
+        <item>Friends</item>
+        <item>Only me</item>
+        <item>Friends except Parents</item>
+
+    </string-array>
+    <string name="join_button">Join Group</string>
+
+    <string name="invite">Invite </string>
+
+    //string array for the categories of groups formed by the users
+    <!-- for group categories-->
+    <string-array name="Categories_group">
+        <item>Others</item>
+        <item>Relations</item>
+        <item>Family</item>
+        <item>Science and Tech</item>
+        <item>Business</item>
+        <item>Health</item>
+        <item>Animals</item>
+        <item>Hobbies</item>
+        <item>Style</item>
+        <item>Entertainment</item>
+        <item>Ecommerce</item>
+        <item>Faith and Spirituality</item>
+    </string-array>
+    <!-- for verification languages-->
+    <string-array name="verification_languages">
+        <item>English</item>
+        <item>Hindi</item>
+
+    </string-array>
+    <!-- for joining credits-->
+    <string-array name="joining_credits">
+
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+    <string name="Relationships">Relationships </string>
+    <string name="Friends">Friends </string>
+    <string name="Business">Business </string>
+    <string name="Study">Study </string>
+    <string name="Science_and_Tech">Science and Tech </string>
+    <string name="Animals">Animals </string>
+    <string name="Hobbies">Hobbies </string>
+    <string name="Style">Style </string>
+    <string name="Entertainment">Entertainment </string>
+    <string name="Ecommerce">Ecommerce </string>
+    <string name="Faith">Faith and Spirituality </string>
+    <string name="Others">Others </string>
+
+
+    <string name="group_chat">Group Chat</string>
+    <string name="send_message">Cancel chat request</string>
+    <string name="send_message_text">Cancel chat Request</string>
+
+
+    <string-array name="Interested_In">
+        <item>Men</item>
+        <item>Women</item>
+        <item>Men and Women both</item>
+        <item>Dont know exactly</item>
+    </string-array>
+    <string-array name="States">
+        <item> Andhra Pradesh </item>
+        <item> Arunachal Pradesh  </item>
+        <item> Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item> Jharkhand</item>
+        <item> Karnataka</item>
+        <item> Kerala</item>
+        <item> Madhya Pradesh</item>
+        <item> Maharashtra</item>
+        <item> Manipur</item>
+        <item> Meghalaya</item>
+        <item> Mizoram</item>
+        <item> Nagaland</item>
+        <item> Odisha</item>
+        <item> Punjab</item>
+        <item> Rajasthan</item>
+        <item> Sikkim</item>
+        <item> Tamil Nadu</item>
+        <item> Telangana</item>
+        <item> Tripura</item>
+        <item> Uttar Pradesh </item>
+        <item> Uttarakhand</item>
+        <item> West Bengal</item>
+    </string-array>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <dimen name="headerTextSize">25sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="toolBarIconSize">30dp</dimen>
+
+
+    <!-- String text for the sign up and login -->
+    <string name="Delete">Delete</string>
+
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Forgot_Password">forgot password?</string>
+    <string name="SignUp_text"> Sign Up with Email Address</string>
+    <string name="Login_with_Phone_number">Login with Phone number</string>
+    <string name="other_methods_of_login">Use Other Methods</string>
+    <string name="loginImage">welcome image in Login</string>
+    <string name="login_show_text">Already\nhave an\nAccount?</string>
+    <string name="image_to_sign_up_page">Sign up button</string>
+    <!-- for comments on the posts -->
+    <string name="comment_hint">Express yourself here</string>
+    <string name="comment_send_button">send button icon</string>
+    <string name="user_name">user name</string>
+    <string name="comment">Comment text will display here</string>
+    <string name="comments">Comments</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="reply">Reply</string>
+    <string name="like_button">Like Button</string>
+    <string name="no_of_likes">0 Likes </string>
+    <!-- for terms and service-->
+    <string name="terms_of_service">Same to you after 2 hoursYour privacy matters to us dot. Your privacy matters to us. You can learn how we handle your information when you use our services by reading our privacy policy we encourage you to give the privacy policy carefully looked because by using our services you agree the that and this app can collect use and share your information consistent with that policy hello my
+        name is Naveen Kumar can I go with his textHello my name 
+        is Naveen Kumar can I call with this text</string>
+
+
+    <!-- for the terms of service-->
+
+    <string name="The_Content_of_others">The Content of others</string>
+    <string name="about_Content_of_others">In all the services that we are providing much of the content is produced by uses, publishers and other third parties. Whether the content that is posted publicly are sent privately, the content is the sole responsibility of the person or organisation that submitted it. Aldo the CraGee App reserves the right to review remove all the content that appears on the services, we do not review all of it. So we cannot take the responsibility of any content that other people provide through the services.Through our terms of services and our community guidelines, we make clear that we dont want the services Put to bad users. But because sometimes we dont review all of the content, we cannot guarantee that content on the services will always conform to our terms of services and our community guidelines.</string>
+
+    <!-- Privacy-->
+    <string name="privacy">Privacy</string>
+    <string name="about_privacy">All of our uses privacy matters to us. You can know how we handle your information when you use our services by reading our privacy policy. We encourage you you to visit our privacy policy page and give a careful look because by using our services you agree that CraGee App can collect, soma and share consistent with that policy.</string>
+    <!-- Respecting Other People?s Rights-->
+
+    <string name="respect">Respecting Other People?s Rights</string>
+    <string name="about_respect">We respect the right of others. And so should you. You therefore may not use the services, will anyone else to use the services, in a manner that that :
+Violets are infringes someone else rights of publicity, privacy copyright.
+Bullies,harasses,or intermediate.
+Defames.
+You must also respect our rights.
+These terms do not grant you right to do any of the following in (or enable anyone else to do so);
+Use branding, logos photographs, bye any other materials used in our services.
+Copy camera upload comedy syndicate, perform make available otherwise use any person of the services are the content of the services except as set forth in these terms.
+You may not use the services or the content on the services in ways that are not authorised by these terms. Nor you help anyone else in doing so.</string>
+    <!-- Respecting copy Rights-->
+    <string name="respect_copyrights">Respecting copy Rights</string>
+    <string name="about_respect_copyrights">CraGee App owners required requirement set forth in the digital Millennium copyright. Weather for take responsibility test speed silly removed from our services in InfRinging material that we become aware of. Hand if we becomes aware that one of a its uses has repeatedly infringed copyrights steps within our power to terminate the users account.
+Define material that is claimed to be infringing or to be the subject of increasing activity and that is to be removed, access to which is to be disabled, mission response reasonably sufficient to latest locate the material.
+Provide your contact information, including your address comedy and email address.
+Provide a personal statement that you have a good faith believe that the use of material in the manner of complaint of is not authorised by the copyright owner, o r the the law.
+</string>
+    <!-- Safety-->
+    <string name="safety">Safety</string>
+    <string name="about_safety">Wait I hard to keep our services as a place for all of our uses. But we cannot guarantee it. By using the services, you agree that:You will not use the services for any purpose that is illegal or prohibited in these terms. You will not use any robot scraper are other automated means are interface to assess the services are extract other users information.
+You will not use or develop any third party applications that interact with the services are other users content it or information without our written consent.
+You will not use the services in a way that could interfere with, negatively affect, read other users from fully enjoying the services.
+You will not yours are attempt to use another user account, use common password with without our without their permission.
+You will not post content that contains all links to pornography thats hate speech, incitement to violence.
+</string>
+
+
+    <!--    Community Guidelines -->
+    <string name="Community_Guidelines">Community Guidelines</string>
+    <string name="about_Community_Guidelines">At CraGee App, it is our responsibility to create a safe environment that excites your creativity and expression. CraGee App is intended to encourage the exchange of perspective, transcending a diverse array of cultures and beliefs.\nCraGee App Community Guidelines are updated from time to time in order to create a safe and friendly environment.\n
+        If it is found that any of our users have violated our guidelines, this may result in your account and/or content being removed. In addition, users must also follow their local laws, and are also advised to acquaint themselves with our Privacy Policy and Terms of Service.
+        CraGee App reserves the right to monitor and report content to authorities, as permitted by applicable law</string>
+    <string name="Respect_the_CraZee_App_Community"> Respect the CraGee App Community：</string>
+    <string name="about_Respect_the_CraZee_App_Community">  CraGee App is intended to be the place where  people having varied ideas, cultures and beliefs come together. The CraGee App Community embraces diversity, and in doing so, prohibits opinions, thoughts and behaviour that violate another’s rights.
+        Specific examples of such behaviour/opinion include</string>
+
+    <string name="Discrimination_or_hate_speech"> A. Discrimination or hate speech</string>
+    <string name="about_Discrimination_or_hate_speech">The CraGee App Community is inclusive.
+        In this app, all users should feel free to express their opinion on different issues based in the country or globally but at the same time posting, sharing, or sending any content that incites hatred against a group of people  based on their race, ethnicity, religion, nationality, culture, disability, sexual orientation, gender, gender identity,
+        age, or material that may in any other manner lead to, or encourage discrimination.</string>
+    <string name="insults_national_honour"> B. Insults to National Honour </string>
+    <string name="about_insults_national_honour"> CraGee App prohibits any activity which insults national symbols, national icons or promotes animosity against the Indian (or any other) state through calls for violence.
+        Such activity includes, but is not limited to.\n Posting, sharing or sending anything that shows disrespect to the national flag, such as burning, mutilation, defacing, defiling, disfiguration, destruction or trampling.
+        Similarly, any instances which display disrespect to the national emblem, national anthem, the Constitution of India or any other national symbol.\n
+        Posting, sharing or sending any content that creates animosity, excites disaffection and promotes violence against the Indian state or in any manner seeks to threaten national integrity through violence against the nation.
+    </string>
+    <string name="Harmful_or_dangerous_content"> C. Harmful or dangerous content </string>
+    <string name="about_Harmful_or_dangerous_content"> CraGee App prohibits posting or sharing content that could harm other users or encourage them to harm themselves – whether physically, emotionally, financially or legally.
+        A few (non exhaustive) examples of prohibited conduct and content are set out below:\n
+        Acts that amount to intimidation or threatening other people, such as through threats of physical harm.\n
+        Content that depicts dangerous acts, self-injury, or suicide, or provide any content that encourages other people to engage in such activities.\n
+        Content that encourages the use and/or sale of weapons, bombs, drugs, or any other regulated goods prohibited by local laws.\n
+        Content posted by Criminals and/or terrorist organizations and individuals.\n
+        Content that encourages or promotes online gambling or other such financial schemes.\n
+        Content that shows/encourages/involves illegal activities.\n
+
+    </string>
+    <string name="Graphic_or_shocking_content"> D. Graphic or shocking content </string>
+    <string name="about_Graphic_or_shocking_content">  CraGee App neither promote nor allow the users to post graphic, violent, shocking, or sensational content.
+        Some specific examples of prohibited  content are set out below:\n
+        Posting, sharing or sending any violent, graphic, shocking, or sensational content, or any content that incites others to commit acts of violence.
+        While considering whether your content could be classified under this category, please keep in mind that some people and groups will be more sensitive than others.\n
+        Posting, sharing or sending content that may glorify, glamourize or in any way encourage the adoption of shocking or dangerous actions.\n
+        Posting, sharing or sending any content which in any way involves or encourages activities such as stalking, or is generally invasive of another person’s privacy.\n
+    </string>
+    <string name="Child_safety_infringement"> E. Child safety infringement</string>
+    <string name="about_Child_safety_infringement">  If CraGee App become aware of content that in any manner sexually exploits, targets, or endangers children, we will report cases to law enforcement agencies and or take other appropriate action. There are some specific examples of such prohibited conduct are:
+
+        Sexually explicit content featuring minors or content that sexually exploits minors.\n
+        Content about online dating with minors, compensated dating, invasion of a minor’s privacy,
+        or other content that endangers minors’ physical and mental health.\n
+        CraGee App may remove access to posts containing nudity, sexually suggestive acts, or unintentionally
+        provocative content involving minors which could be used by others in unanticipated ways.\n
+
+    </string>
+
+    <string name="Pornographic">F. Pornographic Material, Nudity or sexual activity</string>
+    <string name="about_Pornographic"> CraGee App  does not allow users to post, share or send sexually explicit
+        content or content intended for sexual gratification. If something should not be done or shown in public view, don’t post it.
+        Specific examples of prohibited conduct and content are set out below:\n
+        Content that contains, promotes, or encourages sexual assault, sexual abuse, sexual exploitation, or sexual violence.\n
+        Explicit content, sexual content, provocative content or nudity.\n
+        Content related to prostitution, solicitation, or any other types of sex trade.\n
+    </string>
+
+    <string name="Harassment">G. Harassment or cyberbullying</string>
+    <string name="about_Harassment">our users are requested to keep their interactions civil and treat all users with respect.
+        Specific examples of prohibited conduct and content are set out below:\n
+        Use of public posts and/or private messages to harass other people.\n
+        Disclosures of anothers’ personally identifiable information, including address, phone number, email address.\n
+        Deliberately degrading, humiliating, defaming, or bullying other people, or encouraging another user to do so.\n
+    </string>
+    <string name="Impersonation"> H. Impersonation, spam, scams, or other misleading content</string>
+    <string name="about_Impersonation">CraGee App values high-quality, engaging content. Spam, fake, fraudulent, or misleading content, is prohibited on our platform. Specific examples of prohibited conduct and content are:\n
+
+        Impersonation of another individual or organization by the creation of fake identities, fake accounts, false representations of a connection with another organisation, or posting of misleading content to make money.\n
+        Creating artificial online traffic by unfair/artificial means, such as trading comments, hiring others or being hired to write comments, sharing repetitive content, sending chain letters, and using deceptive information to encourage views, likes or comments.\n
+        Posting comments or conducting any activity that harms members of the CraGee App  community, e.g. defrauding users through phishing schemes.
+    </string>
+    <string name="Intellectual_property"> I. Intellectual property</string>
+    <string name="about_Intellectual_property"> CraGee App respects Intellectual Property of its users and of third parties.
+        We also expects its users to do the same, and in doing so requests users not to:\n
+        Post, share, or send any content that violates someone else’s copyrights, trademarks, or other intellectual property rights.\n
+        Post, share or send another person’s work or content falsely representing it as their own.\n
+    </string>
+    <string name="Content_about_Smoking">J. Content about Smoking, Alcohol, Drugs or other banned substances  </string>
+    <string name="about_Content_about_Smoking">CraGee App is not the platform to promote, encourage or glorify the sale or consumption of tobacco products, e-cigarettes,
+        vapes/vapourisers, alcohol, drugs or any other banned products. Examples of such prohibited activities include:\n
+        Posting, sharing or sending any content that depicts smoking or consumption of other tobacco products in a
+        glorificatory or glamorous manner.\n
+        Posting, sharing or sending any content that promotes the consumption of alcohol.\n
+        Posting, sharing or sending any content that depicts the sale or consumption of illicit drugs or similar
+        such banned substances
+    </string>
+    <string name="Other_malicious">K. Other malicious activity  </string>
+    <string name="about_Other_malicious">Interferes with CraGee App’s daily operation, such as hacking its app or associated networks, or bypasses its measures to restrict users’ access.\n
+        Distribution of files that contain viruses, trojans, worms, logic bombs, or other material that is malicious or technologically harmful.\n
+        Use of automated scripts to collect information about uses from CraGee App.
+    </string>
+
+    <!--    Upholding our Community Guidelines -->
+    <string name="Upholding_Community_Guidelines">Upholding our Community Guidelines  </string>
+    <string name="about_Upholding_Community_Guidelines">All CraGee App  users must follow the policies set forth in the CraGee App Community Guidelines.
+        If any of our users violates these guidelines, or if we receive a valid and properly scoped request from law enforcement bodies or other authorized entities,
+        we investigate the case and take proper action. Depending on the severity of the violation and a user history on our app, we may take one or more of the following enforcement measures:\n
+ </string>
+
+    <string name="Limiting_visibility"> <u>Limiting visibility:</u> We may reduce the distribution of the content that may not be appropriate for all audiences.
+        This makes content less visible on the Popular page or only visible to your followers.</string>
+
+    <string name="Removing_content"><u>Removing content:</u>When we believe there is a genuine risk of physical harm or direct threats to public safety,
+        we will report the case to law enforcement bodies as permitted by local laws.
+    </string>
+
+    <string name="Suspending"><u>Suspending an account:</u>This is our most severe enforcement action. When an account is suspended, it is removed from the platform and the violator will not be allowed to create new accounts.</string>
+
+    <string name="Reporting"><u>Reporting to law enforcement bodies:</u>When we believe there is a genuine risk of physical harm or direct threats to public safety,
+        we will report the case to law enforcement bodies as permitted by local laws.</string>
+    <string name="Help_us">Help keep our CraGee App  community safe</string>
+    <string name="about_Help_us">As an important part of the CraGee App community, if you see content that you believe violates any of the Community Guidelines, please help us by using CraGee App  built-in reporting buttons.
+        We have a dedicated team to review all the content flagged by our users, 24/7, and take proper action as quickly as possible.
+        If you have further concerns, please contact crageeapp@gmail.com.</string>
+
+    <!--    Terms of Service-->
+
+    <string name="User_Agreement">User Agreement</string>
+    <string name="about_User_Agreement">This User Agreement (the “Agreement”) govern your use of CraGee App (“Platform”),
+        including all features. By using the Services, you agree to be bound by the Agreement. Please take the time to read
+        them carefully. </string>
+    <string name="Services">User of the Services</string>
+    <string name="about_Services">  You must be mature to use the Service.
+        If you are using the Service on behalf of a company, organization or other legal entity,
+        you represent and warrant that you have the authority to bind such entity to the Agreement.
+    </string>
+    <string name="Posting_Content"> Posting Content</string>
+    <string name="about_Posting_Content"> CraGee  App is building a community where people can get closer to each other.
+        We expect our users express themselves and share content responsibly on the Platform.
+    </string>
+
+    <string name="avoid_posting">  You shall not post, upload, transmit, or share any information that:</string>
+    <string name="about_avoid_posting">
+    violates the Agreement, Community Guidelines and other terms and policies that apply to your use of the Platform.\n
+    is unlawful, discriminatory, fraudulent, harassing, or otherwise grossly harmful.\n
+    harm minors in any way.\n
+    infringes or violates someone else’s right, including but not limited to patent, trademark, copyright or other proprietary rights.\n
+    We will remove any content we find in violation of the above, we may also terminate your account for sever violation.</string>
+    <string name="Content_on_the_Platform">Content on the Platform</string>
+    <string name="about_Content_on_the_Platform"> Any user content will be considered non-confidential and non-proprietary.\n
+
+    You shall be solely responsible for your own content and the consequences of submitting and publishing your content on the Services.\n
+    We do not endorse any content submitted to the Services by any user or any opinion, recommendation, or advice expressed therein, any use or reliance on any content
+        obtained through the Service is at your own risk. Any views and opinions expressed by users on the
+        Platform do not necessarily reflect the policy or position of the Platform.\n
+
+    We reserve the right to remove content that violates The Agreement, Community Guidelines and
+        other policies that apply to your use of the Service.\n
+</string>
+    <string name="Rights_of_the_Content"> Rights of the Content</string>
+    <string name="about_Rights_of_the_Content"> You retain all ownership rights in the content you post and share on the Platform, and nothing in the Agreement restrain
+    the rights you have to your own content. In consideration of providing the Service, when you post or share content that is
+    protected by intellectual property rights, you hereby grant us an unconditional, irrevocable, non-exclusive, royalty-free,
+    fully transferable, assignable, sub-licensable, perpetual worldwide license to host, use, modify, translate, adapt, reproduce,
+    make derivative works of, publish and/or transmit your content. including but not limited to advertising, marketing and promoting
+    and redistributing part or all of the Services (and derivative works thereof) in any formats and through any channels.\n
+    When you post your content through the Service, you agree and represent that you own that content or you have received permission
+    from the owner of any part of the content submitted to the Services.</string>
+    <string name="Use_of_the_Service">Use of the Service </string>
+    <string name="about_Use_of_the_Service">The features of our Services may change from time to time, at our own discretion, including but not limited to:
+    increasing or removing any feature within the Service, restraining you or users generally from accessing certain features,
+    removing or refusing to distribute any content on the Platform.</string>
+
+    <string name="You_may_not">You may not: </string>
+    <string name="about_You_may_not">modify, adapt, translate, reverse engineer, disassemble, decompile or create any derivative works based on the Services, including any files, tables or documentation (or any portion thereof) or determine or attempt to determine any source code, algorithms, methods or techniques embodied the Platform or any derivative works thereof;
+    distribute, license, transfer or sell, in whole or in part, any of the Services or any derivative works thereof;
+    market, rent or lease the Services for a fee or charge, or use the Platform to advertise or perform any commercial solicitation;
+    interfere with or attempt to interfere with the proper working of the Services, disrupt our website or any networks connected to the Services, or bypass any measures we may use to prevent or restrict access to the Services;
+    incorporate the Platform or any portion thereof into any other program or product.
+    use automated scripts to collect information from or otherwise interact with the Services;
+    use or attempt to use another’s account, service or system without authorization from the user, or create a false identity on the Services;
+    use the Services to upload, transmit, distribute, store or otherwise make available in any way files that contain viruses, trojans, worms, logic bombs or other material that is malicious or technologically harmful;
+    We reserve the right, at any time and without prior notice, to remove or disable access to content at our discretion for any reason. Some of the reasons we may remove or disable access to content may include finding the content objectionable, in violation of The Agreement, or otherwise harmful to the Services or our users.
+    </string>
+
+    <string name="Limitation_of_liability">Limitation of liability </string>
+    <string name="about_Limitation_of_liability"> We are trying hard to bring you the best service and maintain a friendly community on the Platform. HOWEVER, THE SERVICES ARE
+    PROVIDED “AS IS” AND WE MAKE NO WARRANTY OR REPRESENTATION TO YOU THAT THEY WILL ALWAYS BE SAFE, SECURE, ERROR-FREE, UNDISRUPTED.\n
+
+    We do not control what users do or say on the Platform, and we are not responsible for their actions or conduct
+    (whether online or offline) or any content they share.\n
+
+    OUR LIABILITY SHALL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, AND UNDER NO CIRCUMSTANCE WILL WE BE
+    LIABLE TO YOU FOR ANY LOST PROFITS, REVENUES, INFORMATION, OR DATA, OR CONSEQUENTIAL, SPECIAL, INDIRECT, EXEMPLARY, PUNITIVE,
+    OR INCIDENTAL DAMAGES ARISING OUT OF OR RELATED TO THE AGREEMENT.\n
+     </string>
+
+    <string name="Other_Terms"> Other Terms </string>
+    <string name="about_Other_Terms"> 1. Changes of the terms\n
+        We amend the terms of the Agreement from time to time, for instance when we update the functionality of our Services or when there are regulatory changes. We will use commercially reasonable efforts
+        to generally notify all users of any material changes to the Agreement, such as through a notice on our Platform.
+        If you do not agree to the new terms, you must stop accessing or using the Services.\n
+
+        2. Suspension or termination account\n
+        3.To access or use some of our Services, you must create an account with us. You agree that you are solely responsible for the activity that occurs under your account.
+
+        We reserve the right to suspend or disable your user account at any time if in our reasonable opinion you have failed to comply with any of the provisions of the Agreement.\n
+
+        4. Parental Consent\n
+        In addition, if you are under the age of 18, you confirm that you possess legal parental or guardian consent for accessing or using the Platform, and are fully able and competent to enter into, abide by, and comply with the Agreement.\n
+
+        5. No Waiver\n
+        Our failure to insist upon or enforce any provision of the Agreement shall not be construed as a waiver of any provision or right.\n
+
+        6.If any court of law, having jurisdiction to decide on this matter, rules that any provision of the Agreement is invalid, then that provision will be removed from the Agreement without affecting the rest of the Agreement, and the remaining provisions of the Agreement will continue to be valid and enforceable.
+    </string>
+
+    <string name="Contact"> Contact </string>
+    <string name="about_Contact"> You can reach us at  crageeapp@gmail.com. </string>
+
+    <!--    Privacy Policy-->
+
+    <string name="Privacy_Policy">Privacy Policy</string>
+    <string name="about_Privacy_Policy">    Welcome to CraGee App (the “Platform”).
+        The Platform is developed for free expression of thoughts and life moments of our users.
+         We respect and are committed to protecting your privacy.\n This policy sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.
+    Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By accessing or using our services, applications, you are accepting and consenting to the practices described in this policy.
+    </string>
+    <string name="The_Types_of_Personal">  1. The Types of Personal Data We Use</string>
+
+    <string name="about_The_Types_of_Personal">  We may collect and use the following information about you:</string>
+
+    <string name="information"> • Information you give us. You may give us information about you by accessing or using our Services or by corresponding with us by phone, e-mail or otherwise.
+        This includes information you provide when you register for and/or use the Platform, such as your customer profile, information about your device, your browsing records, the comments you make on our Platform.
+        The information you give us may include your name, address, email address, telephone number.
+        It also includes information that you give to us, such as a picture, video or other file type that you may choose to access through or post on our Platform.
+    </string>
+    <string name="Metadata"> • Metadata. When you upload a picture, video or other file type to the Platform (“User Content”), you automatically upload certain metadata that is connected to the User Content. In essence, metadata describes other data and provides information about your User Content that will not always be evident to the viewer. In connection with your file the metadata can describe how, when and by whom the piece of User Content was collected and how that content is formatted.
+        It further includes information such as your account name that enables other users to trace back the file to your user account.</string>
+    <string name="Information_from_third_parties">  • Information from third parties.
+        We may receive information if you use any of the other websites we operate or other Services we provide.  </string>
+    <string name="personal_data"> 2. How We Use Your Personal Data </string>
+    <string name="about_personal_data"> We will use the information we collect about you in the following ways: \n • to administer the Platform (i.e. to provide our Services to you) and for internal operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes and to solicit your feedback;
+    • to allow you to participate in interactive features of the Platform, when you choose to do so;\n
+    • to personalize the content you receive and provide you with tailored content that will be of interest to you;\n
+    • to improve and develop our Platform and conduct product development;\n
+    • to make suggestions and recommendations to you and other users of the Platform about goods or services that will interest you or them;\n
+    • to provide you with your profile information to send to anyone you choose and to enable you to participate on the Platform and interact with other users;\n
+    • to show you content that is similar to content you liked or interacted with (by commenting and/or watching the content), content from your region as well as content from users you follow;\n
+    • to promote the Services and use information that you give to us, such as User Content that you can choose to post on our Platform, as part of our advertising and marketing campaigns to promote the Platform;\n
+    • to help us detect abuse, fraud, and illegal activity on the Platform;\n
+    • to notify you about changes to our Services;\n
+    • to communicate with you.\n
+    • to provide you with user support;\n
+    • to enforce our terms, conditions and policies;\n
+    It is in our legitimate interests to promote the Platform, and by agreeing to comply with this policy you agree that we may use information that you give to us, such as User Content that you may choose to post on our Platform, as part of our advertising and marketing campaigns to promote the Platform.
+    </string>
+    <string name="The_Security_of_Your_Personal_Data"> 3. The Security of Your Personal Data </string>
+    <string name="about_The_Security_of_Your_Personal_Data">
+    We take steps to ensure that your information is treated securely and in accordance with this policy.
+    Unfortunately, the transmission of information via the internet is not completely secure.
+    Although we will do our best to protect your information, for example, by encryption, we cannot guarantee the security of your information transmitted through the Platform; any transmission is at your own risk.
+
+    We have appropriate technical and organizational measures to ensure a level of security appropriate
+    to the risk of varying likelihood and severity for the rights and freedoms of you and other users.
+    We maintain these technical and organizational measures and will amend them from time to time to improve
+    the overall security of our systems.</string>
+    <string name="Data_Retention">  4. Data Retention</string>
+    <string name="about_Data_Retention"> We use the following criteria to determine the period for which we will keep your information:\n
+
+    our contractual obligations and rights in relation to the information involved;
+    legal obligation(s) under applicable law(s) and regulations to retain data for a certain period of time;
+    statute of limitations under applicable law(s);
+    our legitimate business purposes; and
+    disputes or potential disputes.\n
+    We will not retain sensitive personal data or information for longer than is required for the purposes for which such information may be lawfully used or is otherwise required under any law for the time being in force.\n
+
+    After you have terminated your use of our Services, we can store your information in
+    an aggregated and anonymized format. Notwithstanding the foregoing, we can also retain any
+    personal information as reasonably necessary to comply with our legal obligations,
+    allow us to resolve and litigate disputes, and to enforce our agreements.
+
+    </string>
+
+    <string name="Information_Relating_to_Children">5. Information Relating to Children</string>
+    <string name="about_Information_Relating_to_Children">  The Platform is not developed  for children.
+        Children are not allowed to use the Platform or register an account on the Platform. If we become aware that personal data has been collected from a chil, we will delete this information and terminate the person’s account. If you believe
+        that we may have personal data about or collected from a child under the age of 13, please contact us at crageeapp@gmail.com.
+    </string>
+
+    <string name="Complaints"> 6. Complaints</string>
+    <string name="about_Complaints">    In the event that you wish to make a complaint about how we process
+        your personal data, please contact us in the first instance at crageeapp@gmail.com and we will endeavour
+        to deal with your request as soon as possible. This is without prejudice to your right to launch a claim with
+        your data protection authority or
+        follow the dispute resolution process provided in the Terms of Service.
+    </string>
+    <string name="changes">   7. Changes</string>
+    <string name="about_changes">    We will use commercially reasonable efforts to generally notify all users of any material changes to this policy,
+    such as through a notice on our Platform, however, you should look at this policy regularly to check for such changes.
+    Your continued access to or use of the Services after the date of the updated policy constitutes your acceptance of the
+    updated policy. If you do not agree to the updated policy, you must stop accessing or using the Services.  </string>
+
+    <string name="privacy_policy_Contact"> 8. Contact</string>
+    <string name="about_privacy_policy_Contact">     Questions, comments and requests regarding this
+        policy are welcomed and should be addressed to  CraGee App at email address of   crageeapp@gmail.com.
+    </string>
+
+    <!--    for the choices activity -->
+    <string name="choice_Text">You have successfully created your account</string>
+    <string name="description_personal_icon">Icon for the personal account</string>
+    <string name="description_public_page"> Icon for the public page</string>
+    <string name="personal_account">Personal Account</string>
+    <string name="public_page">Public Page</string>
+    <string name="select_one">You want to make?</string>
+    <!--    Account information activity -->
+    <string name="Address">Address</string>
+    <string name="category">Category</string>
+    <string name="Confirm">Confirm</string>
+    <string name="College">College</string>
+    <string name="DeleteButton">Delete</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="page_address">Enter your full address</string>
+    <string name="create_page">Create Page</string>
+    <string name="dob">Date of Birth</string>
+    <string name="Description">Description</string>
+    <string name="Describe_page">Describe your page here</string>
+    <string name="gender">Gender</string>
+    <string name="Female">Female</string>
+    <string name="Follow">Follow</string>
+    <string name="firstName">First Name </string>
+    <string name="From">From</string>
+    <string name="lives">Lives in</string>
+    <string name="lastName">Last Name</string>
+    <string name="male">Male</string>
+    <string name="name">Enter name</string>
+    <string name="number">Phone Number</string>
+    <string name="user_bio">Please enter your Bio here</string>
+    <string name="Request_received">Request received</string>
+    <string name="select_dob">Select your date of birth</string>
+    <string name="send_user_message">Send Message</string>
+    <string name="School">School</string>
+    <string name="Verification">Verification Pending</string>
+    <string name="Verification_profile">Verification</string>
+    <string name="Verification_text">Verification</string>
+    <string name="Website">Website</string>
+    <string name="working">Working in/Higher education</string>
+    <!--    profile information fragment -->
+    <string name="Followers">Followers</string>
+    <string name="Followers_NO">0</string>
+    <string name="Following">Following</string>
+    <string name="Following_No">0</string>
+    <string name="Posts">Posts</string>
+    <string name="Posts_No">0</string>
+    <string name="user_Bio">user bio</string>
+    <string name="user_blue_tick">Get Verified</string>
+    <string name="userId">\u0040 %1$s</string>
+
+    <!--    user chat activity -->
+    <string name="online">Online</string>
+    <string name="typing">Start typing</string>
+    <string name="Today">Today</string>
+    <string name="last_seen">Last seen</string>
+    <!--    Group information activity -->
+    <string name="about">About</string>
+    <string name="All_members">All Members</string>
+    <string name="about_open_group">This is an open group.Anyone can join the group and start group chat with members</string>
+    <string name="about_private_group">This is a private group.Anyone can use the credits and join the group chat without sending the group join request</string>
+    <string name="about_public_group">This is a public group.Only accepted users by the group admin can join the group chat</string>
+    <string name="edit_review">Edit your review</string>
+    <string name="first_rule">first rule</string>
+    <string name="group_name">group name</string>
+    <string name="group_description">group description</string>
+    <string name="group_privacy">group privacy</string>
+    <string name="Group_chat">Group chat</string>
+    <string name="Group_Admin">Group Admin</string>
+    <string name="Group_Requests">Group Requests</string>
+    <string name="Group_Activity">Group Activity</string>
+    <string name="Group_created">Group created:</string>
+    <string name="group_rules">   Group rules from the admin</string>
+    <string name="group_owner">You are the admin of this group</string>
+    <string name="group_member">You are the member of this group</string>
+    <string name="group_visitor">You are not member of this group</string>
+    <string name="Join_Group">Join Group</string>
+    <string name="Joining_Credits">Joining Credits</string>
+    <string name="messages">messages</string>
+    <string name="open">Open</string>
+    <string name="Public"> Public   </string>
+    <string name="Private"> Private   </string>
+    <string name="prompted_text_credits">Not enough credits to join the Private Group</string>
+    <string name="ratings_opinion">Ratings and Opinion</string>
+    <string name="Rate_this_group">Rate this group</string>
+    <string name="second_rule"> second rule  </string>
+    <string name="set_joining_credits"> Set joining Credits  </string>
+    <string name="total_messages">Total messages exchanged: </string>
+    <string name="update_rules">Update Rules </string>
+    <string name="update_status">Update status </string>
+    <string name="Updating_credits">Updating joining credits </string>
+    <string name="Your_review">Your review </string>
+
+    <!--     Create Group activity -->
+    <string name="Open_Group">Open Group</string>
+
+    <string name="Cover_Photo">Cover Photo</string>
+    <string name="Create_Group">Create Group</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_group_name">Enter group name</string>
+
+    <string name="Private_Group">Private Group</string>
+    <string name="Public_Group">Public Group</string>
+    <string name="group_describe">Describe your group here…</string>
+    <string name="Tell_about_group">Tell us about your group</string>
+
+    <!--   Ratings Group activity -->
+    <string name="about_reviews">The name and photo on your CraGee Profile will appear with your reviews</string>
+    <string name="review_hint"> Describe your experience(optional)</string>
+    <string name="reviews">Reviews are public and editable</string>
+    <!--     Adapter groups -->
+    <string name="group_privacy_adapter">Privacy</string>
+    <!--    bottom navigation fragment -->
+    <string name="Home">Home</string>
+    <string name="Groups">Groups</string>
+    <string name="Share">Share</string>
+    <string name="Search">Search</string>
+    <string name="Profile">Profile</string>
+    <string name="Wallet">Wallet</string>
+    <string name="Settings">Settings</string>
+    <!--   wallet  fragment -->
+    <string name="rupees">\u20B9 %1$s</string>
+    <string name="My_wallet">My Wallet</string>
+    <string name="Earnings">Earnings</string>
+    <string name="Earnings_about">120.00 INR</string>
+    <string name="Total_Credits">Total Credits</string>
+    <string name="credits_earned">100</string>
+    <string name="Group_Earning">Group Earnings</string>
+    <string name="Payment_Methods">Payment Methods</string>
+    <string name="Referral_Earning">Referral Earnings</string>
+    <string name="Transactions">Transactions</string>
+    <string name="Transactions_about">You don"&apos;"t have any transactions yet</string>
+    <string name="paid">How you get paid</string>
+    <string name="paid_about">You don"&apos;"t need a payment method until your earnings threshold has been reached</string>
+    <string name="Payment_Methods_about">Paid monthly if the total is at least 1000.00 INR (your payout threshold)</string>
+    <!--  Search fragment -->
+    <string name="Search_here">Search here</string>
+    <!--     Verification activity -->
+    <string name="Language">Language</string>
+    <string name="text_speak">Please read the text loudly</string>
+    <string name="verification_text">Verification Text</string>
+    <string name="verification_audio">Voice Recording</string>
+    <string name="verification_text_speak">Please select the language first</string>
+    <string name="show_text">Show Text</string>
+    <string name="timer">timer</string>
+    <string name="verification_pending">Verification Pending</string>
+    <string name="verification_verified">Verified Account</string>
+    <string name="verification_rejected">Account Rejected</string>
+    <string name="verification_status">Verification Status</string>
+    <string name="about_verification_status">about verification status</string>
+    <string name="credits_fixed">Credits Required 100</string>
+    <string name="about_pending_verification">The verification of the user has been pending and usually it takes 24–48 hrs to complete the verification</string>
+    <string name="about_verified_verification">The verification of the user is done by the CreGee App executives.Its is a verified account</string>
+    <string name="about_rejected_verification">The verification of the user is done by the CreGee App executives.Its is  found suspicious. </string>
+    <!--     account privacy -->
+    <string name="about_private">When your account is private,only people you approve can see your photos and posts. Your existing followers would not be affected</string>
+    <string name="Private_privacy">Private Account</string>
+
+    <!--     all messages activity-->
+    <string name="Personal_Chat">Personal Chat</string>
+    <string name="Group_Chat">Group Chat</string>
+    <!--     Personal chat fragment-->
+    <string name="sent_photo">Sent photo</string>
+
+    <!--     profile ratings activity-->
+    <string name="profile_reviews">Please rate the user as per your experience with the user</string>
+    <string name="visibility_profile_reviews">Rating you give will only be seen by the reviewed user</string>
+    <!--     account profile activity-->
+    <string name="your_Ratings">Your Ratings</string>
+    <string name="rate_user">Rate User</string>
+    <string name="requested">Requested</string>
+    <string name="follow_back">Follow Back</string>
+    <string name="following">Following</string>
+    <string name="follow">Follow</string>
+    <string name="unFollow">Unfollow</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_ratings">User Ratings</string>
+    <string name="block_text">You can block them anytime from their profile</string>
+    <string name="after_block_text">You can unblock them anytime from their profile</string>
+    <string name="unfollow_quote">If you change your mind,you"&apos;"ll have to follow again </string>
+    <string name="unblock_text">They will now be able to see your profile,posts and follow you on CraGee App.CraGee App won"&apos;"t let them know you unblocked them.</string>
+    <string name="block_clicked_text">\u25CF They won "&apos;"t be able to find your profile,posts on CraGee App.CraGee App won"&apos;"t let them know you blocked them.</string>
+    <!-- Firebase database -->
+    <string name="Users">Users</string>
+    <!--    about banner -->
+    <string name="banner_adUnitId">ca-app-pub-4481308585888180/3791486649</string>
+    <string name="Ad_app_id">ca-app-pub-4481308585888180~3499293866</string>
+    <string name="Verification_ad_unit">ca-app-pub-4481308585888180/4129960626</string>
+    <string name="profile_ad_unit">ca-app-pub-4481308585888180/9782220827</string>
+    <string name="profile_fragment_ad_unit">ca-app-pub-4481308585888180/4867060242</string>
+    <string name="groups_fragment_ad_unit">ca-app-pub-4481308585888180/2008769097</string>
+    <string name="wallet_fragment_ad_unit">ca-app-pub-4481308585888180/6582153515</string>
+    <string name="test_device">883CFB71DEB812137C8EF25A0AF52CDF</string>
+
+
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="image">image</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">Sign In</string>
+    <string name="btn_link_to_register">Not have a account? Sign Up now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="display_names">Display Names</string>
+    <string name="hey_there_i_am_using_be_you">Hey There I am using Be_You!</string>
+    <string name="change_status">Change Status</string>
+    <string name="change_image">Change Image</string>
+    <string name="display_name">Display Name</string>
+    <string name="post_title">Post Title..</string>
+    <string name="post_description">Post Description…</string>
+    <string name="submit_post">Submit Post</string>
+    <string name="your_status">Your status</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="write_new_status">Write New Status</string>
+    <string name="post_title_comes_here">post Title comes here</string>
+    <string name="post_description_comes_here">Post Description comes here</string>
+    <string name="default_status">Default Status</string>
+    <string name="display_names09">Display Names</string>
+    <string name="changeable">changeable</string>
+    <string name="display_names3">Display Names3</string>
+    <string name="status">status</string>
+    <string name="send_friend_request">send friend request</string>
+    <string name="decline_friend_request">Decline Friend request</string>
+    <string name="friends_from">Friends from</string>
+    <string name="friends_fromdate">Friends From:</string>
+
+    <string name="add_image">add_image</string>
+    <string name="profileimage">profileimage</string>
+    <string name="displayname">Displayname</string>
+
+    <string name="display_name1">Display Name</string>
+    <string name="write_message">Write Message</string>
+    <string name="save_changes1">Save Changes</string>
+    <string name="write_message1">Write Message</string>
+    <string name="sign_up">sign up</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="add_post">Add Post</string>
+    <string name="string_add_post" />
+    <string name="all_users">All Users</string>
+    <string name="posts">Posts</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="textview">TextView</string>
+    <string name="_00_00">00:00</string>
+    <string name="gender_new">Gender:</string>
+    <string name="message">message</string>
+    <string name="type">type</string>
+    <string name="online1">Online</string>
+    <string name="kiran">kiran</string>
+    <string name="enter_text_to_insert_in_database">Enter text to insert in database</string>
+    <string name="submit">submit</string>
+    <string name="demo">Demo</string>
+    <string name="add_post1">Add Post</string>
+    <string-array name="gender_array">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string name="title_activity_ad_showing_">AdShowing_Activity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">your banner id</string>
+    <string name="adid">your add id</string>
+    <string name="accountsettingactivity_adid">your second_adid</string>
+    <string name="title_activity_first__interstitial__ad">First_Interstitial_Ad</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">your interstitial_ad_id</string>
+    <string name="go_to_adview">go to adview</string>
+    <string name="type_a_message">Type a Message</string>
+    <string name="write_new_name">Write New Name</string>
+
+    <!--     payments activity-->
+    <string name="payment_for_private">Why pay for the private groups ?</string>
+    <string name="about_payment_for_private">
+        • Become  a exclusive member of the group.\n
+        • Do private group chat with authentic members of the group.\n
+        • Make new friends with same interests.\n
+        • use the different services offered by the group.\n
+        • Get rid of ads.</string>
+
+    <string name="group_payment">\u20B9 25</string>
+    <string name="tick_payment">\u20B9 59</string>
+    <string name="verification_charge">Verification Charge</string>
+
+
+    <!-- blue tick payment-->
+    <string name="payment_for_blue_tick">Why pay for the blue tick Verification?</string>
+    <string name="about_payment_for_blue_tick">
+        • The blue verified badge  on  CraGee App lets people know that an account of public interest is authentic.\n
+        • An account may be verified if it is determined to be an account of public interest. Typically this includes accounts maintained by users in music, acting, fashion, government, politics, religion, journalism, media, sports, business, and other key interest areas.\n
+        • CraGee App is offering blue tick for everyone irrespective of social status after paying the verification charge\n
+        • A verified badge does not imply an endorsement by CraGee App .\n</string>
+    <!-- about fragment-->
+    <string name="CraGee_app">What is CraGee App?</string>
+    <string name="about_CraGee_app">CraGee App is a messaging app with a focus on speed and security.It is super fast and simple to use.\n\n
+    • you can use CraGee App on all your devices at the same time. your messages synchronise any number of your phone,tablet or computers.\n
+    •with CraGee App you can send messages, photos and  create groups,personal pages,personal account.
+    </string>
+
+    <string name="CraGee_app_for">Who is CraGee App for?</string>
+    <string name="about_CraGee_app_for">CraGee App is for everyone who wants fast and reliable messaging and calls.
+        Anyone can make public and private group for efficient transfer of information for free.public groups can be joined
+        by anyone.private groups can be joined by everyone after
+        the payment of required group joining fee.</string>
+    <string name="CraGee_app_age">How old is CraGee App?</string>
+    <string name="about_CraGee_app_age">CraGee App for Android was launched in July 1,2020.The Alpha version
+        of CraGee App for Android officially launched on February 2020. </string>
+    <string name="CraGee_app_which"> Which devices can I use ?</string>
+    <string name="about_CraGee_app_which">You can use CraGee App on smartphone(Android (4.1 and up)) and
+        tablet. We are developing the web version of CraGee App and it will be available soon.</string>
+    <string name="CraGee_app_where">  Where is CraGee App based?</string>
+    <string name="about_CraGee_app_where">The CraGee App development team is based in Uttar Pradesh,India.
+    Most of the developers behind CraGee App have originally come from Lucknow,Uttar Pradesh</string>
+    <!-- write to us fragment-->
+    <string name="CraGee_app_help">Help us in improving the CraGee App</string>
+    <string name="about_CraGee_app_help">Please give us valuable suggestions and help us improving the CraGee App. </string>
+    <string name="suggestions_write">Write your suggestions here</string>
+
+    <!-- rate fragment-->
+    <string name="rate_app">Rate your experience</string>
+    <string name="rate_app_text">Please rate CraGee App in the play store and support us </string>
+    <string name="about_rate_app">How would you rate CraGee App</string>
+    <string name="about_rate_thanks">Thank You for rating us</string>
+    <!-- invite friends fragment-->
+    <string name="share_app">Share with Friends</string>
+    <string name="share_app_about">Because your friends deserves to Live Life Better </string>
+    <string name="share_app_link"> Please download Made in India CraGee App developed in Uttar Pradesh.\n\n  https://play.google.com/store/apps/details?id=com.crageeApp.appbesocial
+    \n\n https://crageeapp.page.link/Eit5 </string>
+    <string name="cragee_app">CraGee App</string>
+    <string name="online_users">Online Users</string>
+    <!-- Notifications fragment-->
+    <string name="Notifications">Notifications</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

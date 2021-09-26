@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "864537942096",
+    "firebase_url": "https://app-besocial.firebaseio.com",
+    "project_id": "app-besocial",
+    "storage_bucket": "app-besocial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864537942096:android:54c7d7abadfff23d201955",
+        "android_client_info": {
+          "package_name": "com.crageeApp.appbesocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864537942096-7uq20l7456m10b8uk1s8ob79i5544gjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crageeApp.appbesocial",
+            "certificate_hash": "66d1041c7cce179e8eb75b179d76a5d5590567f2"
+          }
+        },
+        {
+          "client_id": "864537942096-7o6oqoh48cgfg39abb1juc83aal8nrru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crageeApp.appbesocial",
+            "certificate_hash": "991079b2036773583f10de05ecfbb8193f79028b"
+          }
+        },
+        {
+          "client_id": "864537942096-hb3p85n10hsf7a19so3lr6t501n89le7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4kW3ffytHhdYRdbwa2kdQ7t5XJkC0Hc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864537942096-hb3p85n10hsf7a19so3lr6t501n89le7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

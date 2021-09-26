@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stories.displayStoryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image"
+        android:src="@drawable/profile_image"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/reverse"/>
+       <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/skip"/>
+
+        
+    </LinearLayout>
+
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/stories"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="top"
+        android:layout_marginTop="8dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stories"
+        android:layout_margin="10dp" >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/profilePhotoStories"
+            android:src="@drawable/profile_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/story_user_name"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/profilePhotoStories"
+            android:layout_toRightOf="@+id/profilePhotoStories" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

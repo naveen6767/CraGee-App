@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Menu item's that displayed on Toolbar -->
+    <item
+        android:id="@id/rewardsFragment"
+        android:icon="@drawable/refer_icon"
+        android:orderInCategory="200"
+        android:title="@string/Share"
+        app:showAsAction="ifRoom"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/walletFragment"
+        android:icon="@drawable/icon_wallet"
+        android:orderInCategory="200"
+        android:title="@string/Wallet"
+        app:showAsAction="ifRoom"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="200"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom"
+        android:menuCategory="secondary"/>
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/crageeHome"
+        android:title="@string/Home"
+        android:icon="@drawable/ic_home"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/crageeSearch"
+        android:title="@string/Search"
+        android:icon="@drawable/ic_search"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/crageePosts"
+        android:title="@string/Posts"
+        android:icon="@drawable/ic_post"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/crageeGroups"
+        android:title="@string/Groups"
+        android:icon="@drawable/ic_groups"
+        android:menuCategory="secondary"/>
+    <item
+        android:id="@id/crageeProfile"
+        android:title="@string/Profile"
+        android:icon="@drawable/ic_profile"
+        android:menuCategory="secondary"/>
+
+</menu>

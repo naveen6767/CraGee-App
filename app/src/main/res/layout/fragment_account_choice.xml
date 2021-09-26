@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountChoice.accountChoiceFragment">
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="@string/choice_Text"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:gravity="center_horizontal" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="@string/select_one"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="23sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    android:gravity="center_horizontal" />
+
+<ImageView
+    android:id="@+id/imageViewPersonal"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="16dp"
+    android:src="@drawable/icon_personal_account"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="@string/personal_account"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    android:textStyle="normal"
+    app:layout_constraintBottom_toTopOf="@+id/imageViewPublic"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageViewPersonal"
+    android:gravity="center_horizontal" />
+<ImageView
+    android:id="@+id/imageViewPublic"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="16dp"
+    android:src="@drawable/icon_public_channel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="0dp"
+    android:layout_height="20dp"
+    android:text="@string/public_page"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    android:textStyle="normal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageViewPublic"
+    android:gravity="center_horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userChatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.UserChatActivity"
+    android:background="@color/chat_background">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/toolBarUserChat"
+        android:background="@color/chat_tool_bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--receiver profile picture-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/profileIv"
+                android:src="@drawable/ic_default_face"
+                android:background="@color/chat_tool_bar"
+                android:tint="@color/white"/>
+            <!-- profile name -->
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/profileIv"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/profileIv"
+                android:layout_marginLeft="5dp">
+                <!--receiver name-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameTv"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+                <!--receiver status online or offline-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userStatusTv"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/OptionsUserChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_post_options"
+                android:layout_alignParentEnd="true"
+                android:background="@color/chat_tool_bar"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolBarUserChat"
+            android:layout_above="@+id/chatLayout">
+            <!--recycler view-->
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chat_recyclerView"
+                    android:scrollbars="vertical"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+    <!-- user messages edit text and send button layout-->
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--attach image button-->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_attach_image"
+            android:id="@+id/attach_button"
+            android:background="@null"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+        <!--edit text input message-->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageEt"
+            android:background="@drawable/white_grey_border_small"
+            android:hint="@string/typing"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="Autofill">
+
+        </EditText>
+
+        <!--send message button-->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/send_icon"
+            android:id="@+id/sendBtn"
+            android:background="@null"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</RelativeLayout>

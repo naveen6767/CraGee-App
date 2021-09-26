@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/crageeHome">
+
+    <fragment
+        android:id="@+id/crageeHome"
+        android:name="com.crageeApp.appbesocial.HomeFragments.crageeHomeFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/cragee_home_fragment" />
+    <fragment
+        android:id="@+id/crageeSearch"
+        android:name="com.crageeApp.appbesocial.crageeSearch.crageeSearchFragment"
+        android:label="@string/Search"
+        tools:layout="@layout/cragee_search_fragment" />
+    <fragment
+        android:id="@+id/crageePosts"
+        android:name="com.crageeApp.appbesocial.crageePosts.crageePostsFragment"
+        android:label="@string/Posts"
+        tools:layout="@layout/cragee_posts_fragment" />
+    <fragment
+        android:id="@+id/crageeGroups"
+        android:name="com.crageeApp.appbesocial.crageeGroups.crageeGroupsFragment"
+        android:label="@string/Groups"
+        tools:layout="@layout/cragee_groups_fragment" />
+    <fragment
+        android:id="@+id/crageeProfile"
+        android:name="com.crageeApp.appbesocial.crageeProfile.crageeProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/cragee_profile_fragment" />
+</navigation>

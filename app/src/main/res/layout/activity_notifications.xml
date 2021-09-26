@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifications.NotificationsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar_notifications"
+        app:title="Notifications"
+        app:titleTextColor="@color/black"
+        android:background="@color/green">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/notify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar_notifications"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/likes_show"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@color/red"
+                android:padding="10dp"
+                android:src="@drawable/notify_likes"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription"
+                android:layout_marginEnd="15dp" />
+            <ImageButton
+                android:id="@+id/likes_show_notify"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="45dp"
+                android:padding="10dp"
+                android:src="@drawable/notify_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/likes_show"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/comments_show"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@color/startBlue"
+                android:padding="10dp"
+                android:src="@drawable/notify_comments"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription"
+                android:layout_marginEnd="15dp" />
+            <ImageButton
+                android:id="@+id/comments_show_notify"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="45dp"
+                android:padding="10dp"
+                android:src="@drawable/notify_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/comments_show"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/follows_show"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@color/green"
+                android:padding="10dp"
+                android:src="@drawable/notify_follows"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription"
+                android:layout_marginEnd="15dp" />
+            <ImageButton
+                android:id="@+id/follows_show_notify"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="45dp"
+                android:padding="10dp"
+                android:src="@drawable/notify_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/follows_show"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/requests_show"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:src="@drawable/notify_requests"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/requests_show_notify"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="45dp"
+                android:padding="10dp"
+                android:src="@drawable/notify_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/requests_show"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainerNotifications"
+        android:layout_below="@+id/notify_layout"
+        android:layout_marginTop="20dp">
+    </FrameLayout>
+
+
+</RelativeLayout>

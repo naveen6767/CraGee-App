@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/postLayout"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/wholePostLayout"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/postProfileImageValue"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@color/background"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                tools:targetApi="lollipop" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/postProfileName"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:padding="5dp"
+                        android:text=""
+                        android:background="@drawable/data_placeholder_items"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:minLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/padding_10" />
+
+                    <ImageButton
+                        android:id="@+id/postOptions"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/data_placeholder_items"
+                        android:layout_marginEnd="@dimen/padding_10"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        tools:ignore="ContentDescription"
+                        android:layout_marginRight="@dimen/padding_10" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:text=""
+
+                    android:background="@drawable/data_placeholder_items"
+                    android:id="@+id/currentPostTime"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:autoLink="all"
+            android:clickable="true"
+            android:id="@+id/postDescription"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:visibility="gone"
+            android:focusable="true" />
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/data_placeholder_items"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/totalPostLikes"
+            android:textSize="18sp"
+            android:background="@drawable/data_placeholder_items"
+            android:layout_margin="5dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:background="@drawable/data_placeholder_items"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+</RelativeLayout>
